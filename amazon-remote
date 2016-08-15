@@ -1,0 +1,4 @@
+source $PROFILE_HOME/shared
+source $PROFILE_HOME/shared-amazon
+
+alias reload='source $PROFILE_HOME/amazon-remote'
