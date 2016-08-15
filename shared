@@ -1,13 +1,4 @@
-
 alias ls='ls -lhaG'
-
-# up 'n' folders
-alias ..='cd ..'
-alias ...='cd ../..'
-alias ....='cd ../../..'
-alias .....='cd ../../../..'
-
-alias reload='source ~/.profile'
 
 alias gs="git status"
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
@@ -17,10 +8,6 @@ alias refresh="clear && cd ~"
 hgrep(){
   history | grep "$1"
 }
-
-export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
-export CLICOLOR=1
-export LSCOLORS=ExFxBxDxCxegedabagacad
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
