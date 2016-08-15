@@ -1,4 +1,4 @@
-alias ls='ls -lhaG'
+alias ls='ls -lhAG'
 
 alias gs="git status"
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
@@ -12,3 +12,10 @@ hgrep(){
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+alias here='hostname; pwd'
+
+# skip the first line due to extra info in ls command
+alias count='ls | tail -n+2 | wc -l'
+latest(){
+  ls -t | tail -n+2 | head -n 1
+}

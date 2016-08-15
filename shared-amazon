@@ -1,5 +1,3 @@
-source ~/DVCooperScripts/cooper-dev-env.sh
-
 export PATH="$PATH:/apollo/env/SDETools/bin"
 
 export CLOUDBOX="kparkerr.aka.corp.amazon.com"
