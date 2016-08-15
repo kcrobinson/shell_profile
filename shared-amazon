@@ -1,0 +1,52 @@
+source ~/DVCooperScripts/cooper-dev-env.sh
+
+export PATH="$PATH:/apollo/env/SDETools/bin"
+
+export CLOUDBOX="kparkerr.aka.corp.amazon.com"
+export MYDRIVE="/Volumes/kparkerr@"
+export MACBOX="f45c89914043.ant.amazon.com"
+
+alias bb='brazil-build'
+alias b='brazil-build build'
+alias bbc='brazil-build clean'
+alias bbt='brazil-build test'
+alias bbti='brazil-build test-integration'
+alias bbs='brazil-build server'
+alias bbr='brazil-recursive-cmd brazil-build'
+
+alias abp="brazil ws --use -p"
+alias rbp="brazil ws --remove -p"
+
+alias ninja="ninja-dev-sync"
+
+alias sshcloud="ssh $CLOUDBOX"
+
+backup() {
+  cp $1 $MYDRIVE/backup
+}
+
+alias cr='post-review -u dv-cooper-cpx'
+
+copyFromHost(){
+  scp -r "$1:$2" "$3"
+}
+
+copyToHost(){
+  scp -r "$1" "$2:/home/kparkerr/$3"
+}
+
+copyFromRemote(){
+  copyFromHost "$CLOUDBOX" "/home/kparkerr/$1" "$2"
+}
+
+copyToRemote(){
+  copyToHost "$1" $CLOUDBOX "$2"
+}
+
+copyFromMac(){
+  copyFromHost "$MACBOX" "/Users/kparkerr/$1" "2"
+}
+
+copyToMac(){
+  copyToHost "$1" "$MACBOX" "$2"
+}
