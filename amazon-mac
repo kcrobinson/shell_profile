@@ -1,6 +1,7 @@
 source $PROFILE_HOME/shared
 source $PROFILE_HOME/shared-amazon
 source $PROFILE_HOME/shared-mac
+source $PROFILE_HOME/shared-zshrc
 
 alias reload='source $PROFILE_HOME/amazon-mac'
 

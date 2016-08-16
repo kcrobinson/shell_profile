@@ -30,7 +30,7 @@ copyFromHost(){
 }
 
 copyToHost(){
-  scp -r "$1" "$2:/home/kparkerr/$3"
+  scp -r "$1" "$2:$3"
 }
 
 copyFromRemote(){
@@ -38,7 +38,7 @@ copyFromRemote(){
 }
 
 copyToRemote(){
-  copyToHost "$1" $CLOUDBOX "$2"
+  copyToHost "$1" $CLOUDBOX "/home/kparkerr/$2"
 }
 
 copyFromMac(){
@@ -46,5 +46,5 @@ copyFromMac(){
 }
 
 copyToMac(){
-  copyToHost "$1" "$MACBOX" "$2"
+  copyToHost "$1" "$MACBOX" "/Users/kparkerr/$2"
 }

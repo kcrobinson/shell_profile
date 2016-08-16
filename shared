@@ -20,3 +20,6 @@ alias count='ls | tail -n+2 | wc -l'
 latest(){
   ls -t | tail -n+2 | head -n 1
 }
+
+# Warp-To, uses oh-my-zsh plugin WarpDrive
+alias wt='wd'

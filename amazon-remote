@@ -1,7 +1,12 @@
 source $PROFILE_HOME/shared
 source $PROFILE_HOME/shared-amazon
+source $PROFILE_HOME/shared-zshrc
 
 alias reload='source $PROFILE_HOME/amazon-remote'
+
+export PATH="$PATH:/apollo/env/AmazonAwsCli/bin"
+export AWS_CREDENTIALS_ODIN=com.amazon.access.dv-cooper-accounts-beta-revenue-reports-worker-1
+source /apollo/env/AmazonAwsCli/bin/aws_zsh_completer.sh
 
 # For use in kcrobinson oh-my-zsh theme
 export BOX='CLOUD'

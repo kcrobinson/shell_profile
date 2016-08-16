@@ -1,0 +1,18 @@
+setopt NO_BEEP
+setopt COMPLETE_IN_WORD
+
+setopt APPEND_HISTORY
+setopt HIST_IGNORE_ALL_DUPS
+setopt INC_APPEND_HISTORY
+setopt SHARE_HISTORY
+setopt EXTENDED_HISTORY
+setopt HIST_NO_STORE
+setopt NO_HIST_BEEP
+
+setopt NOCLOBBER
+
+HISTSIZE=1000
+SAVEHIST=1000
+HISTFILE=~/.history
+
+alias gac='gaa; gc'
