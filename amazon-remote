@@ -2,3 +2,6 @@ source $PROFILE_HOME/shared
 source $PROFILE_HOME/shared-amazon
 
 alias reload='source $PROFILE_HOME/amazon-remote'
+
+# For use in kcrobinson oh-my-zsh theme
+export BOX='CLOUD'

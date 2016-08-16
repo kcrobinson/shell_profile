@@ -3,3 +3,6 @@ source $PROFILE_HOME/shared-amazon
 source $PROFILE_HOME/shared-mac
 
 alias reload='source $PROFILE_HOME/amazon-mac'
+
+# For use in kcrobinson oh-my-zsh theme
+export BOX='MAC'
