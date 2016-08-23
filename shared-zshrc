@@ -15,4 +15,9 @@ HISTSIZE=1000
 SAVEHIST=1000
 HISTFILE=~/.history
 
-alias gac='gaa; gc'
+dl() {
+  for file in $1/*/ ; do
+    cd $file && 1
+  done
+  d
+}
