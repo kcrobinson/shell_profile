@@ -1,9 +1,13 @@
+# Add the following before sourcing this file
+# export PROFILE_HOME='/Users/kparkerr/workspace/shell_profile
+
+# Create a link to kcrobinson.zsh-theme in the custom theme folder
+# Add the following before .zshrc ZSH_THEME="kcrobinson"
+# export BOX='MAC'
+
 source $PROFILE_HOME/shared
 source $PROFILE_HOME/shared-amazon
 source $PROFILE_HOME/shared-mac
 source $PROFILE_HOME/shared-zshrc
 
 alias reload='source $PROFILE_HOME/amazon-mac'
-
-# For use in kcrobinson oh-my-zsh theme
-export BOX='MAC'

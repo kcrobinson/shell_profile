@@ -21,3 +21,17 @@ dl() {
   done
   d
 }
+
+alias -g ...='../..'
+alias -g ....='../../..'
+alias -g .....='../../../..'
+
+hash -d docs=~/Documents
+hash -d down=~/Downloads
+hash -d desk=~/Desktop
+alias -g docs=~docs
+alias -g down=~down
+alias -g desk=~desk
+
+# https://github.com/robbyrussell/oh-my-zsh/wiki/Cheatsheet
+alias glr='git pull --rebase'

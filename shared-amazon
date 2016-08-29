@@ -11,6 +11,7 @@ alias bbt='brazil-build test'
 alias bbti='brazil-build test-integration'
 alias bbs='brazil-build server'
 alias bbr='brazil-recursive-cmd brazil-build'
+alias bbsmd='brazil ws --sync --md'
 
 alias abp="brazil ws --use -p"
 alias rbp="brazil ws --remove -p"
