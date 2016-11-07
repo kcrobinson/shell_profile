@@ -12,8 +12,8 @@ hgrep(){
 alias h='history | tail -20'
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+eval "$(rbenv init -)"
 
 alias here='hostname; pwd'
 
@@ -22,6 +22,8 @@ alias count='ls | tail -n+2 | wc -l'
 latest(){
   ls -t | tail -n+2 | head -n 1
 }
+
+mkcd() { mkdir -p "$@" && cd "$_"; }
 
 # Warp-To, uses oh-my-zsh plugin WarpDrive
 alias wt='wd'

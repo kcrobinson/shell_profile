@@ -2,7 +2,7 @@ export PATH="$PATH:/apollo/env/SDETools/bin"
 
 export CLOUDBOX="kparkerr.aka.corp.amazon.com"
 export MYDRIVE="/Volumes/kparkerr@"
-export MACBOX="f45c89914043.ant.amazon.com"
+export MACBOX="c4b301d42a51.ant.amazon.com"
 
 alias bb='brazil-build'
 alias b='brazil-build build'
