@@ -43,9 +43,11 @@ copyToRemote(){
 }
 
 copyFromMac(){
-  copyFromHost "$MACBOX" "/Users/kparkerr/$1" "2"
+  copyFromHost "$MACBOX" "/Users/kparkerr/$1" "$2"
 }
 
 copyToMac(){
   copyToHost "$1" "$MACBOX" "/Users/kparkerr/$2"
 }
+
+alias remove-packages='python remove-packages.py -rm -f -ws ~/workspace/ -cache /local/brazil-pkg-cache/packages'
